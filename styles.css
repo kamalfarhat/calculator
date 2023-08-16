@@ -1,1 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body, 
+html {
+    margin: 0;
+    background-color: gray;
+}
+
+input {
+    border: none;
+}
+
+.background {
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: gray;
+padding-top: 0.3cm;
+}
+
+.calculatorContainer {
+    display: flex;
+    flex-direction: column;
+    width: 7.5cm;
+    height: 11.5cm;
+    padding: 0.4cm;
+    background-color: white;
+    border-radius: 25px;
+    align-items: center;
+    
+}
+
+.display {
+    display: flex;
+    width: 6.8cm;
+    height: 2cm;
+
+}
+
+.midSpace {
+    display: flex;
+    width: 6.8cm;
+    height: 1cm;
+    background-color: white;
+    border-bottom: 1px solid lightgray;
+    font-family: material icons;
+    justify-content: right;
+    justify-self: right;
+    font-size: 28px;
+    color: lightgray;
+
+}
+
+.backSpace {
+    
+    font-size: 32px;
+    color: lightgray;
+    font-family: material icons;
+
+
+
+}
+
+.buttonsContainer {
+    display: grid;
+    width: 7.5cm;
+    height: 8.5cm;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    background-color: white;
+    justify-items: center;
+    align-items: center;
+    padding-top: 8px;
+    font-family: "Roboto";
+
+}
+
+.button {
+    display: flex;
+    width: 1.4cm;
+    height: 1.4cm;
+    margin: 0;
+    border-radius: 50px;
+    background-color: lightgray;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+
+}
+
+.operation {
+    color: green;
+    font-size: 32px;
+    
+}
+
+.operationNonSymbol {
+    color: green;
+    font-size: 18px;
+    
+}
+
+.equals {
+    background-color: green;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    
+}
+
+.c {
+    color: red;
+    font-weight: bold;
+
+}
+
+.x {
+    font-family: material icons;
+}
+
+.add {
+    font-family: material icons;
+}
+
+.divide {
+    font-weight: bold;
+}
+
+.minus {
+    font-weight: bold;
+}
+
+.cursor {
+    display: flex;
+    width: 100%;
+    justify-content: right;
+    align-items: center;
+}
+
+.cursor span::after {
+    content: "";
+    width: 2px;
+    height: 24px;
+    background: gray;
+    display: inline-block;
+    animation: cursor-blink 1.5s steps(2) infinite;
+
+  }
+
+  @keyframes cursor-blink {
+    0% {
+      opacity: 0;
+    }
+  }
+
+.displayNumbers {
+    font-family: "Roboto";
+    font-size: 32px;
+    color: gray;
+
+}
 
